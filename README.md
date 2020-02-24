@@ -1,16 +1,3 @@
-# Welcome to Software Foundations -- ECE141a
-## Assignment #1 -- Due Wednesday, January 15, 11:15pm
-
-This assignment will help you develop skills with streams. Streams are the first objects most C++ programmers interact with. We talked about streams during lecture, so feel free to review the slides. 
-
-## Part 0 - Assigned Reading
-
-Read chapter 1.7 (streams) and 2.1-2.6 about classes in your textbook: "Discovering Modern C++". 
-
-Estimated newbie time: 1-2 hours.
-
-![alt text](book.jpg "Title")
-
 ## Assignment Overview
 
 If you open main.cpp, you'll see it refers to the following classes: 
@@ -36,8 +23,6 @@ First, show a prompt to the user asking them to enter their name, then collect t
 > Hi Bob, enter your age: ..user types 20...
 > Thanks Bob, you did a good job for someone who is 20! 
 
-Estimated newbie time: 15 minutes
-
 
 ## Part 2- Writing text data to a file-stream
 
@@ -53,7 +38,6 @@ The `TextStreamWriter.run()` method will help you generate a multi-line text fil
 
 It is your responsibility to add a data member called `output` to the `TextStreamWriter` class of type `ofstream`, which can write streams to the file system (see your book for more details). Also, you have to "open" the output stream for writing in the class constructor.
 
-Estimated newbie time: 1 hour.
 
 ## Part 3 - Simple token-oriented input from a stream 
 
@@ -63,7 +47,6 @@ The `TextStreamTokenizer.run()` method will read the given text file. It will re
 
 As before, you need to declare an std::ifstream class in your `TextStreamTokenizer`, and open the stream for reading in your constructor.
 
-Estimated newbie time: 1 hour.
 
 ## Part 4 - Reading entire lines of text from a stream
 
@@ -82,7 +65,6 @@ TextStreamLineReader::run(std::ostream &anOutput) {
 }
 ```
 
-Estimated newbie time: 1 hour.
 
 ## Part 5 - Writing JSON to a file stream
 
@@ -113,7 +95,6 @@ The boilerplate to complete this task is already set up for you, with comments t
 #1 Initialize a `Student` class with your personal information,  
 #2 Implement operator << method on the Student class to emit your student object in json format
 
-Estimated newbie time: 1 hour.
 
 ## Part 6 - Writing binary data to a file-stream
 
@@ -129,13 +110,4 @@ DDDDDD
 
 Opening a stream in "binary" mode is done using settings, which have already been set up for you on the `BinaryStreamWriter` class. Your job will be to write blocks of data, filled with a given character, into the binary stream. Once again, your project contains a good start on the code necessary to do this work. Just look for comments in the code that indicate where you need to add code.
 
-What most of you will discover to be your biggest challenge, is how to create and "write" a buffer full of data (block) into the stream. It's up to you to learn how to do this from your textbook, or online resources.  You can ask your peers, use the google machine (or stackoverflow!) -- but you MAY NOT copy code from any source.
 
-Estimated newbie time: 2 hours.
-
-
-## You're DONE! 
-
-Once you write, compile, test, and debug your code, you're ready to check it all back into github.  
-
-NOTE: Please don't forget to manually fill out your student.json file. Vlad-the-compiler uses this information to record your grade. If the file is missing (or incomplete) -- you'll get zero points for the assignment. Please don't make this newbie mistake!
